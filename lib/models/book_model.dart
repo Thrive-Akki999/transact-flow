@@ -45,7 +45,8 @@ class BookSearchResult {
       error: json['error'] ?? '0',
       total: json['total'] ?? '0',
       page: json['page'] ?? '1',
-      books: (json['books'] as List<dynamic>?)
+      books:
+          (json['books'] as List<dynamic>?)
               ?.map((book) => Book.fromJson(book))
               .toList() ??
           [],
