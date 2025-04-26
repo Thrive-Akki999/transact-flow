@@ -14,6 +14,7 @@ class BookDetail {
   final String image;
   final String url;
   final Map<String, String> pdf;
+  
 
   BookDetail({
     required this.error,
